@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                            //EX Chatbot//
+
+    // userImput = prompt ("Dis moi quelque chose : (Deux réponses possible, Bonjour ou tu vas bien ?)");        
+    //     if ( userImput === "Bonjour") {
+    //         resultat = alert("Bonjour à toi");
+    //     }
+    //     else if ( userImput === "tu vas bien ?") {
+    //         resultat = alert("Bien et toi ?");
+    //     }
+    //     else {
+    //         resultat = alert("Désolé, je n'ai pas compris...");
+    //     }
+
+    //     userImput = prompt("Dit moi quelque chose ?");     
+    // if (userImput === "Bonjour") {
+    //     alert("Bonjour ! Ca va ?");
+    //     userFine = prompt("Répond moi par oui ou non");
+        
+    //     if (userFine === "oui") {
+    //         alert("Je suis content pour toi.");
+    //     }
+    //     else {
+    //         alert("Désolé, il faut que je file...");
+    //     }
+    // }
+                //ARBRE 5 question et reponses//
+
+    // Niveau 1 : Le Format
+// SI "Lecture classique (Noir & Blanc)" ➔ (Japon) ➔ Aller au Niveau 2A
+// SI "Lecture verticale (Couleur)" ➔ (Webtoon/Manhua) ➔ Aller au Niveau 2B
+    // Niveau 2A : Branche Japon (Manga)
+// SI "Combats de survie/Guerre" ➔ L'Attaque des Titans
+// SI "Quête de puissance/Métier" ➔ Aller au Niveau 3A
+    // Niveau 2B : Branche Corée/Chine
+// SI "Monde moderne + Donjons" ➔ Solo Leveling (Corée)
+// SI "Monde ancien + Cultivation" ➔ Tales of Demons and Gods (Chine)
+    // Niveau 3A : Type de pouvoirs (Japon suite)
+// SI "Énergie interne (Nen/Occulte)" ➔ Aller au Niveau 4
+// SI "Aventure Pure" ➔ Aller au Niveau 5
+    // Niveau 4 : Le style de combat
+// SI "Sombre et urbain (Fléaux)" ➔ Jujutsu Kaisen
+// SI "Aventure et stratégie (Examen)" ➔ Hunter x Hunter
+    // Niveau 5 : L'univers
+// SI "Pirates et Mer" ➔ One Piece
+// SI "Ninjas et Villages" ➔ Naruto
+
+// userImput = prompt("Quel format de lecture préfères-tu ? (Deux réponses possible, 'Japonais' (Noir & Blanc, lecture classique) 'Coréen' / 'Chinois' (Couleur, lecture verticale))");
+// if ( userImput === "Japonais") {
+//     alert("Que recherches-tu ?");
+//     userChoiceManga = prompt ("Deux choix possible : 'Combats de survie/Guerre' ou 'Quête de puissance/Métier'") 
+//     if (userChoiceManga === "Combats de survie/Guerre") {
+//         alert("L'Attaque des Titans");
+//     }
+//     else if( userChoiceManga === "Quête de puissance/Métier") {
+//         userPower = prompt("Quel type de pouvoir preéfères-tu ? Deux choix possible : 'Énergie interne (Nen/Occulte)' ou 'Aventure Pure'")
+//         if (userPower === "Énergie interne") {
+//             userFight = prompt("Quel style de combat veux-tu ? Deux choix possible: 'Sombre et urbain (Fléaux)' ou 'Aventure et stratégie (Examen)'")
+//             if(userFight === "Sombre et urbain" && "Fléaux") {
+//                 alert ("Jujutsu Kaisen")
+//             }
+//             else if(userFight === "Aventure et stratégie" && "Examen") {
+//                 alert ("Hunter x Hunter")
+//             }
+//         else if(userPower === "Aventure Pure") {
+//             userUnivers = prompt ("Quel univers préfères-tu ? Deux choix possible: 'Pirates et Mer' ou 'Ninjas et Villages'")
+//             if("Pirates et Mer") {
+//                 alert("One piece");
+//             }
+//             else ("Ninjas et Villages") {
+//                 alert("Naruto");
+//             }
+//             }
+//         }
+//         }
+        
+//     }
+// }
+// else if( userImput === "Coréen" && "Chinois") {
+//     alert("Que recherches-tu ?");
+//     userChoiceManhua = prompt ("Deux choix possible : 'Monde moderne + Donjons' ou 'Monde ancien + Cultivation'") 
+//     if (userChoiceManhua === "Monde moderne" && "Donjons") {
+//         alert("Solo Leveling (Corée)");
+//     }
+//     else if( userChoiceManhua === "Monde ancien" && "Cultivation") {
+//         alert ("Tales of Demons and Gods (Chine)")
+//             }
+//         }
+
+
+// alert("Bienvenue ! Je vais te recommander un manga/manhwa/manhua");
+
+// userInput = prompt("Quel format de lecture préfères-tu ? (Tape 'Japonais' pour Noir & Blanc, ou 'Coréen' ou 'Chinois' pour Couleur)");
+// if (userInput === "Japonais") {
+//     alert("Que recherches-tu ?");
+//     userChoiceManga = prompt("Deux choix possibles : 'Combats de survie/Guerre' 'Quête de puissance/Métier'");
+//     if (userChoiceManga === "Combats de survie/Guerre") {
+//         alert("Je te recommande : L'Attaque des Titans ");
+//     } 
+//     else if (userChoiceManga === "Quête de puissance/Métier") {
+//         userPower = prompt("Quel type de pouvoir préfères-tu ? 'Énergie interne' 'Aventure Pure'");
+//         if (userPower === "Énergie interne") {
+//             userFight = prompt("Quel style de combat veux-tu ? 'Sombre et urbain' 'Aventure et stratégie'");
+//             if (userFight === "Sombre et urbain") {
+//                 alert("Je te recommande : Jujutsu Kaisen ");
+//             } 
+//             else if (userFight === "Aventure et stratégie") {
+//                 alert("Je te recommande : Hunter x Hunter ");
+//             } 
+//             else {
+//                 alert("Choix non reconnu. Relance le chat-bot !");
+//             }
+//         } 
+//         else if (userPower === "Aventure Pure") {
+//             userUnivers = prompt("Quel univers préfères-tu ? 'Pirates et Mer' 'Ninjas et Villages'");
+            
+//             if (userUnivers === "Pirates et Mer") {
+//                 alert("Je te recommande : One Piece ");
+//             } 
+//             else if (userUnivers === "Ninjas et Villages") {
+//                 alert("Je te recommande : Naruto ");
+//             } 
+//             else {
+//                 alert("Choix non reconnu. Relance le chat-bot !");
+//             }
+//         } 
+//         else {
+//             alert("Choix non reconnu. Relance le chat-bot !");
+//         }
+//     } 
+//     else {
+//         alert("Choix non reconnu. Relance le chat-bot !");
+//     }
+// } 
+// else if (userInput === "Coréen" || userInput === "Chinois") {
+//     alert("Que recherches-tu ?");
+//     userChoiceManhua = prompt("Deux choix possibles : 'Monde moderne + Donjons' 'Monde ancien + Cultivation'");
+    
+//     if (userChoiceManhua === "Monde moderne + Donjons") {
+//         alert("Je te recommande : Solo Leveling  (Corée)");
+//     } 
+//     else if (userChoiceManhua === "Monde ancien + Cultivation") {
+//         alert("Je te recommande : Tales of Demons and Gods  (Chine)");
+//     } 
+//     else {
+//         alert("Choix non reconnu. Relance le chat-bot !");
+//     }
+// } 
+// else {
+//     alert("Format non reconnu. Relance le chat-bot !");
+// }
+// alert("Merci d'avoir utilisé le chat-bot ! Bonne lecture ")
+
+// for(i=1; i<200;i++) {
+//     if (i%5 && i%3 === 0) {
+//     console.log("FizzBuzz");
+//     }
+//     else if(i%5 === 0) {
+//     console.log("Buzz");
+//     }
+//     else if(i%3 === 0) {
+//     console.log("Fizz");
+//     }
+//     else {
+//         console.log(i)
+//     }
+// }
+
+// let secretNumber = Math.floor(Math.random()*100);
+
+// for(let i=0; i<10; i++) {
+//     userChoice = prompt("Choissez un nombre entre 1 et 100, vous avez 10 chances")
+//     if(userChoice < secretNumber) {
+//         alert ("Plus grand");
+//     }
+//     else if(userChoice > secretNumber) {
+//         alert ("Plus petit");
+//     }
+//     else if (userChoice == secretNumber) {
+//         alert ("Félicitation, vous avez gagner !!!");
+//     }
+//     else {
+//         alert ("Numéro non autorisé");
+//     }
+// }
+
+// let secretSign = Math.floor(Math.random("Ciseaux" || "Pierre" || "Feuille"));
+// for(let i=0; i<3; i++) {
+//     userChiFouMi = prompt("Choissez entre 'Ciseaux', 'Pierre' ou 'Feuille'")
+//     if("Ciseaux"<"Pierre") {
+//         alert("Gagné");
+//     }
+//     else if("Feuille"<"Ciseaux") {
+//         alert("Gagné")
+//     }
+//     else if("Pierre"<"feuille") {
+//         alert("Gagné")
+//     }
+//     else {
+//         alert("Perdu")
+//     }
+// }
+
+alert("Bienvenue au Chifoumi ! Tu vas jouer 3 manches contre l'ordinateur.");
+for (let i = 0; i < 3; i++) {
+    let randomChoice = Math.floor(Math.random() * 3);
+    secretSign = choixPossibles[randomChoice];
+    userChiFouMi = prompt("Manche " + (i + 1) + "Choisis entre 'Pierre', 'Feuille' ou 'Ciseaux'");
+    if (userChiFouMi === null || userChiFouMi === "") {
+        alert("Tu as annulé le jeu !");
+        break;
+    }
+    alert("Tu as choisi : " + userChiFouMi + "L'ordinateur a choisi : " + secretSign);
+    if (userChiFouMi === secretSign) {
+        alert("Égalité ! ");
+        egalites = egalites + 1;
+    }
+    else if (
+        (userChiFouMi === "Pierre" && secretSign === "Ciseaux") ||
+        (userChiFouMi === "Feuille" && secretSign === "Pierre") ||
+        (userChiFouMi === "Ciseaux" && secretSign === "Feuille")
+    ) {
+        alert("Gagné ! ");
+        victoires = victoires + 1;
+    }
+    else {
+        alert("Perdu ! ");
+        defaites = defaites + 1;
+    }
+}
+alert("Fin du jeu !" +
+      "Victoires : " + victoires +
+      "Défaites : " + defaites + 
+      "Égalités : " + egalites + );
+
+if (victoires > defaites) {
+    alert("Félicitations, tu as gagné la partie ! ");
+} else if (victoires < defaites) {
+    alert("Dommage, l'ordinateur a gagné cette fois ! ");
+} else {
+    alert("Match nul ! Vous êtes à égalité ! ");
+}
+    </script>   
+</body>
+</html>
