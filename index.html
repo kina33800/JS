@@ -246,79 +246,74 @@
 
 
 
-alert("Bienvenue au Chifoumi ! Tu vas jouer 3 manches contre le Boss Soufiane.");
-function comparer(choix1, choix2) {
-    if (choix1 === choix2) {
-        return "égalité";
-    }
-    if (choix1 === "pierre") {
-        if (choix2 === "ciseaux") {
-            return "Soufiane gagne comme d'habitude";
-        }
-        else { 
-            return "Bot... :'(";
-        }
-    } 
-    else if (choix1 === "feuille") {
-        if (choix2 === "pierre") {
-            return "Soufiane gagne comme d'habitude";
-        } 
-        else { 
-            return "Bot... :'(";
-        }
-    } 
-    else if (choix1 === "ciseaux") {
-        if (choix2 === "feuille") {
-            return "Soufiane gagne comme d'habitude";
-        }
-        else { 
-            return "Bot... :'(";
-        }
-    } 
-    else {
-        throw new Error ("ERREUR, ERREUR, ERREUR !!!")
-    }
-}
+// alert("Bienvenue au Chifoumi ! Tu vas jouer 3 manches contre le Boss Soufiane.");
+// function comparer(choix1, choix2) {
+//     if (choix1 === choix2) {
+//         return "égalité";
+//     }
+//     if (choix1 === "pierre") {
+//         if (choix2 === "ciseaux") {
+//             return "Soufiane gagne comme d'habitude";
+//         }
+//         else { 
+//             return "Bot... :'(";
+//         }
+//     } 
+//     else if (choix1 === "feuille") {
+//         if (choix2 === "pierre") {
+//             return "Soufiane gagne comme d'habitude";
+//         } 
+//         else { 
+//             return "Bot... :'(";
+//         }
+//     } 
+//     else if (choix1 === "ciseaux") {
+//         if (choix2 === "feuille") {
+//             return "Soufiane gagne comme d'habitude";
+//         }
+//         else { 
+//             return "Bot... :'(";
+//         }
+//     } 
+//     else {
+//         throw new Error ("ERREUR, ERREUR, ERREUR !!!")
+//     }
+// }
 
-function PlayChiFouMi() {
-    scoreBot = 0;
-    ScoreBoss = 0; 
-}
+// function PlayChiFouMi() {
+//     scoreBot = 0;
+//     ScoreBoss = 0; 
+// }
 
-for(i=0; i<3; i++) {
-    if(choixBot = Math.random()<0.33) {
-    console.log ("Pierre")
-    }
-    else if(choixBot = Math.random()<0.66) {
-    console.log ("Feuille")
-    }
-    else { 
-    console.log ("Ciseaux")
-    }
-    let choixBoss = prompt ("Choissichez une réponse entre 'Pierre','Feuille' et 'Ciseaux'").toLowerCase();
-    let resultat = comparer(choixBot, choixBoss);
-    if (choixBoss>choixBot){
-        console.log (ScoreBoss ++)
-    }
-    else if (choixBoss<choixBot){
-        console.log (ScoreBot ++)
-    }
-    if (ScoreBoss === 2) {
-        alert("Soufiane a gagné comme d'habitude")
-    }
-    else if (ScoreBoss === 2) {
-        alert("Le Bot a eut de la chance...")
-    }
-    else {
-        alert("Pas de gagnant, match nul comme les joueurs")
-    }
-}
-PlayChiFouMi ();
-
-
-
-
-
+// for(i=0; i<3; i++) {
+//     if(choixBot = Math.random()<0.33) {
+//     console.log ("Pierre")
+//     }
+//     else if(choixBot = Math.random()<0.66) {
+//     console.log ("Feuille")
+//     }
+//     else { 
+//     console.log ("Ciseaux")
+//     }
+//     let choixBoss = prompt ("Choissichez une réponse entre 'Pierre','Feuille' et 'Ciseaux'").toLowerCase();
+//     let resultat = comparer(choixBot, choixBoss);
+//     if (choixBoss>choixBot){
+//         console.log (ScoreBoss ++)
+//     }
+//     else if (choixBoss<choixBot){
+//         console.log (ScoreBot ++)
+//     }
+//     if (ScoreBoss === 2) {
+//         alert("Soufiane a gagné comme d'habitude")
+//     }
+//     else if (ScoreBoss === 2) {
+//         alert("Le Bot a eut de la chance...")
+//     }
+//     else {
+//         alert("Pas de gagnant, match nul comme les joueurs")
+//     }
+// }
+// PlayChiFouMi ();
 
 
 // for (let i = 0; i < 3; i++) {
@@ -358,6 +353,152 @@ PlayChiFouMi ();
 // } else {
 //     alert("Match nul ! Vous êtes à égalité ! ");
 // }
+
+        // let guy = ['pink guy', 'purple guy', 'green guy']; 
+        //   console.log(guy);
+        //   console.log(guy.length); //Pour vois nombre de valeur dans mon tableau
+        //   guy[1] = 'blue guy'; // [Pour choisir élément du tableau] à remplacer
+        //   console.log(guy);
+        //   console.log(guy.length);
+        //   guy.push('grey guy'); // Pour rajouter une valeur au tableau
+        //   console.log(guy);
+        //   console.log(guy.length);
+        //   guy.pop(); // Pour supprimer une valeur au tableau
+        //   console.log(guy);
+      
+
+      // let jours = [ 'lun', '007', 'mer', 'jeu', 'ven', 'sam', 'BUG' ];
+      //   console.log(jours);
+      //   console.log(jours.length);
+
+      //   jours.pop();
+      //   console.log(jours)
+      //   console.log(jours.length);
+
+      //   jours.push('dim')
+      //   console.log(jours)
+      //   console.log(jours.length);
+
+      //   jours[1] = 'mar';
+      //   console.log(jours)
+      //   console.log(jours.length);
+
+      //   jours.indexOf('jeu');
+      //   console.log(jours)
+      //   console.log(jours.length);
+
+      //   console.log(jours[3]);
+
+        //   function market(){
+        //     var fruits = [ 'Mangue', 'Raisin', 'Figue', 'Kiwi' ];
+        //     console.log (fruits);
+        //     var fruitsTxt = fruits.join(', ');
+        //     var customerChoice = prompt('Quel fruit désirez-vous ? ' + fruitsTxt);
+              
+        //     dispo = fruits.indexOf(customerChoice);
+            
+        //     if (dispo !== -1) {
+        //         fruits.splice(dispo, 1);
+        //         alert('ok!');
+        //     } else {
+        //         alert('indisponible');
+        //     }
+        //     console.log (fruits);
+        //   }
+        //   market()
+
+        // Jeu du pendu //
+
+function JeuDuPendu() {   
+    let secretWord = 'onomatopee';     
+    let mauvaisesLettres = []; 
+    let lettresAttendues = secretWord.split(''); //['v','o','y','a','g','e','s'];
+    let lettresTrouvees = '';
+    
+
+    while (mauvaisesLettres.length < 10 && lettresAttendues.length > 0) { //Jusqu'a 10 tentative = while
+            //pormpt
+    let lettreProposee = prompt ('JEREMIE JE TE MET AU DEFI DE TROUVER LE MOT !!! \n' +
+    'choisissez une lettre minuscule \n' + 
+    'Lettre restantes : ' + lettresAttendues.length + '\n' +
+    'Trouvées :' + lettresTrouvees + '\n' +
+    'Erreurs :' + mauvaisesLettres.join(',') + '\n' + 
+    "Tentatives restantes : " + (10 - mauvaisesLettres.length)).toLowerCase();
+
+    if (lettresAttendues.indexOf(lettreProposee) !== -1){
+    alert("Bravo ! La lettre est dans le mot");
+        let nombreOccurences = 0;
+        while (lettresAttendues.indexOf(lettreProposee) !== -1) {
+            let position = lettresAttendues.indexOf(lettreProposee);
+                lettresAttendues.splice(position, 1);
+                lettresTrouvees += lettreProposee;
+        }
+    }
+    else {
+        mauvaisesLettres.push(lettreProposee)
+        alert("Dommage ! Mauvaise lettre");
+    }
+    console.log(mauvaisesLettres)
+    console.log(lettresAttendues)
+}
+    if (lettresAttendues.length === 0) {
+        alert ("BRAVO, VOUS AVEZ DEVINER LE MOT " + secretWord.toUpperCase());
+    }
+    else if (mauvaisesLettres.length === 10) {
+        alert ("VOUS AVEZ PERDU... :'( LE MOT ETAIT " + secretWord.toUpperCase());  
+    }
+}
+JeuDuPendu ()
+
+
+
+
+
+
+
+
+
+
+//     var mauvaisesLettres = []; 
+//     var lettresAttendues = ['v','o','y','a','g','e','s'];
+
+//     for (i = 0; i < 10; i++) {
+    
+//     // Afficher l'état du jeu
+//     alert("Lettres à trouver : " + lettresAttendues.length + 
+//           "\nTentatives restantes : " + (10 - mauvaisesLettres.length));
+    
+//     // Vérifier victoire
+//     if (lettresAttendues.length === 0) { // ⚠️ ERREUR 2 : il faut .length
+//         alert("BRAVO, VOUS AVEZ DEVINÉ LE MOT");
+//         break; // Sortir de la boucle
+//     }
+    
+//     // Vérifier défaite
+//     if (mauvaisesLettres.length === 10) { // ⚠️ ERREUR 3 : il faut .length
+//         alert("VOUS AVEZ PERDU... :'(");
+//         break; // Sortir de la boucle
+//     }
+    
+//     // Demander une lettre
+//     userPendu = prompt("Choisissez une lettre");
+    
+//     // Vérifier si la lettre est dans le mot
+//     if (lettresAttendues.indexOf(userPendu) !== -1) { // ⚠️ ERREUR 4 : utiliser indexOf
+//         // Trouver et supprimer la lettre
+//         var position = lettresAttendues.indexOf(userPendu);
+//         lettresAttendues.splice(position, 1); // ⚠️ ERREUR 5 : utiliser splice, pas pop
+//         alert("Bravo ! La lettre est dans le mot");
+//     }
+//     else {
+//         mauvaisesLettres.push(userPendu); // ⚠️ ERREUR 6 : il faut passer userPendu en paramètre
+//         alert("Dommage ! Mauvaise lettre");
+//          }
+//      }
+
+        
+
+    
     </script>   
 </body>
 </html>
