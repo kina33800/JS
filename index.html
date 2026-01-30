@@ -409,92 +409,118 @@
 
         // Jeu du pendu //
 
-function JeuDuPendu() {   
-    let secretWord = 'onomatopee';     
-    let mauvaisesLettres = []; 
-    let lettresAttendues = secretWord.split(''); //['v','o','y','a','g','e','s'];
-    let lettresTrouvees = '';
+// function JeuDuPendu() {   
+//     let secretWord = 'onomatopee';     
+//     let mauvaisesLettres = []; 
+//     let lettresAttendues = secretWord.split(''); //['v','o','y','a','g','e','s'];
+//     let lettresTrouvees = '';
     
 
-    while (mauvaisesLettres.length < 10 && lettresAttendues.length > 0) { //Jusqu'a 10 tentative = while
-            //pormpt
-    let lettreProposee = prompt ('JEREMIE JE TE MET AU DEFI DE TROUVER LE MOT !!! \n' +
-    'choisissez une lettre minuscule \n' + 
-    'Lettre restantes : ' + lettresAttendues.length + '\n' +
-    'Trouvées :' + lettresTrouvees + '\n' +
-    'Erreurs :' + mauvaisesLettres.join(',') + '\n' + 
-    "Tentatives restantes : " + (10 - mauvaisesLettres.length)).toLowerCase();
+//     while (mauvaisesLettres.length < 10 && lettresAttendues.length > 0) { //Jusqu'a 10 tentative = while
+//             //pormpt
+//     let lettreProposee = prompt (' JE TE MET AU DEFI DE TROUVER LE MOT !!! \n' +
+//     'choisissez une lettre minuscule \n' + 
+//     'Lettre restantes : ' + lettresAttendues.length + '\n' +
+//     'Trouvées :' + lettresTrouvees + '\n' +
+//     'Erreurs :' + mauvaisesLettres.join(',') + '\n' + 
+//     "Tentatives restantes : " + (10 - mauvaisesLettres.length)).toLowerCase();
 
-    if (lettresAttendues.indexOf(lettreProposee) !== -1){
-    alert("Bravo ! La lettre est dans le mot");
-        let nombreOccurences = 0;
-        while (lettresAttendues.indexOf(lettreProposee) !== -1) {
-            let position = lettresAttendues.indexOf(lettreProposee);
-                lettresAttendues.splice(position, 1);
-                lettresTrouvees += lettreProposee;
-        }
-    }
-    else {
-        mauvaisesLettres.push(lettreProposee)
-        alert("Dommage ! Mauvaise lettre");
-    }
-    console.log(mauvaisesLettres)
-    console.log(lettresAttendues)
-}
-    if (lettresAttendues.length === 0) {
-        alert ("BRAVO, VOUS AVEZ DEVINER LE MOT " + secretWord.toUpperCase());
-    }
-    else if (mauvaisesLettres.length === 10) {
-        alert ("VOUS AVEZ PERDU... :'( LE MOT ETAIT " + secretWord.toUpperCase());  
-    }
-}
-JeuDuPendu ()
-
-
-
-
-
-
-
-
-
-
-//     var mauvaisesLettres = []; 
-//     var lettresAttendues = ['v','o','y','a','g','e','s'];
-
-//     for (i = 0; i < 10; i++) {
-    
-//     // Afficher l'état du jeu
-//     alert("Lettres à trouver : " + lettresAttendues.length + 
-//           "\nTentatives restantes : " + (10 - mauvaisesLettres.length));
-    
-//     // Vérifier victoire
-//     if (lettresAttendues.length === 0) { // ⚠️ ERREUR 2 : il faut .length
-//         alert("BRAVO, VOUS AVEZ DEVINÉ LE MOT");
-//         break; // Sortir de la boucle
-//     }
-    
-//     // Vérifier défaite
-//     if (mauvaisesLettres.length === 10) { // ⚠️ ERREUR 3 : il faut .length
-//         alert("VOUS AVEZ PERDU... :'(");
-//         break; // Sortir de la boucle
-//     }
-    
-//     // Demander une lettre
-//     userPendu = prompt("Choisissez une lettre");
-    
-//     // Vérifier si la lettre est dans le mot
-//     if (lettresAttendues.indexOf(userPendu) !== -1) { // ⚠️ ERREUR 4 : utiliser indexOf
-//         // Trouver et supprimer la lettre
-//         var position = lettresAttendues.indexOf(userPendu);
-//         lettresAttendues.splice(position, 1); // ⚠️ ERREUR 5 : utiliser splice, pas pop
-//         alert("Bravo ! La lettre est dans le mot");
+//     if (lettresAttendues.indexOf(lettreProposee) !== -1){
+//     alert("Bravo ! La lettre est dans le mot");
+//         let nombreOccurences = 0;
+//         while (lettresAttendues.indexOf(lettreProposee) !== -1) {
+//             let position = lettresAttendues.indexOf(lettreProposee);
+//                 lettresAttendues.splice(position, 1);
+//                 lettresTrouvees += lettreProposee;
+//         }
 //     }
 //     else {
-//         mauvaisesLettres.push(userPendu); // ⚠️ ERREUR 6 : il faut passer userPendu en paramètre
+//         mauvaisesLettres.push(lettreProposee)
 //         alert("Dommage ! Mauvaise lettre");
-//          }
-//      }
+//     }
+//     console.log(mauvaisesLettres)
+//     console.log(lettresAttendues)
+// }
+//     if (lettresAttendues.length === 0) {
+//         alert ("BRAVO, VOUS AVEZ DEVINER LE MOT " + secretWord.toUpperCase());
+//     }
+//     else if (mauvaisesLettres.length === 10) {
+//         alert ("VOUS AVEZ PERDU... :'( LE MOT ETAIT " + secretWord.toUpperCase());  
+//     }
+// }
+// JeuDuPendu ()
+
+
+// PLAYLIST
+
+// function playlist () {
+//     let titreBase = [
+//     'Love is blind - Damso',
+//     'Encore une nuit - Hamza',
+//     'Dictionnaires - Ninho ft Freeze Corleone'
+//     ];
+
+//     let derniereMusiqueAjoutee = musiques[musiques.length - 1];
+// LastSongAdd
+//     for(i=0; i<10; i++);
+    
+//     let addSong = prompt ("Voulez-vous ajouter un titre a votre playlist ? Répond par oui/non");
+//     if (addSong === "oui") {
+//         let newSong = prompt ("Quel titre voulez-vous ajouter (veuillez l'ecrire de cette maniere: titre - artistre)");
+//         titreBase.push(newSong);
+//         alert("Titre ajouté !\n\nNouvelle playlist :\n" + titreBase.join('\n'));  
+//     }
+//     else {
+//         alert("D'accord, à bientot !")
+//     }
+// }
+// playlist()
+
+function playlist() {
+    let musiques = [
+        'Love is blind - Damso', 
+        'Encore une nuit - Hamza', 
+        'Dictionnaires - Ninho ft Freeze Corleone',
+        'Que des faits - Gazo'
+    ];
+
+    let LastSongAdd = musiques[musiques.length - 1];
+    for (let i = 0; i < 10; i++) {
+        let reponse = prompt(
+            "PLAYLIST\n\n" +
+            musiques.join('\n') + "\n\n" +
+            "Nombre de musiques : " + musiques.length + "\n" +
+            "Dernière musique ajoutée : " + LastSongAdd + "\n\n" +
+            "Tapez 'stop' pour arrêter ou entrez une nouvelle musique :"
+        );
+
+        if (reponse === 'stop') {
+            alert("Playlist finale :\n" + musiques.join('\n'));
+            break; 
+        }
+
+        musiques.push(reponse);
+        LastSongAdd = reponse; 
+        let suppression = prompt("Voulez-vous supprimer une musique de la playlist ? (oui/non)");
+        if (suppression === "oui") {
+            let playlistNumerotee = musiques.map((musique, index) => index + " - " + musique).join('\n');
+            let suppressionNumber = prompt(
+                "Quelle musique voulez-vous supprimer ?\n\n" +
+                playlistNumerotee + "\n\n" +
+                "Indiquer un numéro de 0 à " + (musiques.length - 1)
+            );
+            musiques.splice(Number(suppressionNumber), 1); 
+            alert("musique supprimée !");
+        }
+        if (musiques.length > 10) {
+            musiques.splice(0, 1); 
+            alert("La playlist a dépassé 10 musiques. La première a été supprimée.");
+        }
+        console.log("État actuel:", musiques);
+    }
+    alert("Fin de la playlist !");
+}
+playlist();
 
         
 
